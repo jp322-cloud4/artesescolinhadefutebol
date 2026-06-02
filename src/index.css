@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-whatsapp: "Roboto", -apple-system, sans-serif;
+  
+  --color-primary-dark: #030D1B;
+  --color-primary: #071B33;
+  --color-primary-light: #0E294A;
+  --color-trust: #071B33;
+  --color-accent: #FACC15;
+  --color-accent-dark: #EAB308;
+  --color-accent-light: #FEF9C3;
+  --color-ice: #F8FAFC;
+  --color-ice-dark: #F1F5F9;
+}
+
+body {
+  background-color: var(--color-ice);
+  color: #1A2E35;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes peekAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-75px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-carousel-peek {
+  animation: peekAnimation 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

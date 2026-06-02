@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Pack Canva - Limpeza de Estofados",
+  "description": "Página de vendas profissional para o Pack de 60 artes editáveis no Canva para profissionais de limpeza de estofados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
